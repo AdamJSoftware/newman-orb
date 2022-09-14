@@ -7,6 +7,6 @@ parameters:
 steps:
   - run:
       environment:
-        CONFIG_DIR: <<parameters.dir>>
+        COLLECTIONS_DIR: <<parameters.dir>>
       name: Newman runner
       command: <<include(scripts/greet.sh)>>
