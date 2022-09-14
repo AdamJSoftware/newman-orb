@@ -11,4 +11,6 @@ parameters:
     description: "Hello to whom?"
 steps:
   - pipeline:
+      attach_workspace:
+        at: /root/project
       dir: << parameters.dir >>
