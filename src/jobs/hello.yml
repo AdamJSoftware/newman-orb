@@ -10,7 +10,7 @@ parameters:
     default: "/root/project/collections"
     description: "Hello to whom?"
 steps:
+  - attach_workspace:
+      at: /root/project
   - pipeline:
-      attach_workspace:
-        at: /root/project
       dir: << parameters.dir >>
